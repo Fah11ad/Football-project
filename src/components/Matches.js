@@ -3,23 +3,8 @@ import { Card, Container, Row, Col, Table } from 'react-bootstrap'
 import axios from 'axios'
 
 
-export default class football extends Component {
-    state = {
-        response: null
-    }
-
-    componentDidMount() {
-        let obj = this
-        axios({
-            headers: { 'X-Auth-Token': '24cff506e20140d3aea18a56e74c7ec7' },
-            url: 'https://api.football-data.org/v2/matches?api-key=24cff506e20140d3aea18a56e74c7ec7',
-            dataType: 'json',
-            type: 'GET',
-        })
-            .then(function (response) {
-                obj.setState({ response })
-            })
-    }
+export default class Matches extends Component {
+    
     render() {
         let today = new Date()
         let date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate()
@@ -46,7 +31,7 @@ export default class football extends Component {
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    {this.state.response == null ? [] : this.state.response.data.matches.map((val, i) => (
+                                    {this.props.response == null ? [] : this.props.response.data.matches.map((val, i) => (
                                         <tr>
                                             <td>{val.utcDate}</td>
                                             <td>{val.competition.name}</td>
