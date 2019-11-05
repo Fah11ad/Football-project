@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Card, Container, Row, Col, Table } from 'react-bootstrap'
+import '../App.css'
 
 
 export default class SpainTable extends Component {
@@ -9,43 +10,43 @@ export default class SpainTable extends Component {
         return (
             <div>
                 <Container>
-                    <Card style={{ margin: '24px 24px 24px 24px',backgroundColor: '#030366', color: '#fff'}}>
-                        <Card.Title  >
+                    <Card style={{ margin: '24px 24px 24px 24px',backgroundColor: '#030366', color: '#fff', transform: 'skew(-20deg)', opacity: .99}}>
+                        <Card.Title>
                             <h2 style={{paddingTop: '20px'}}>LA LIGA</h2>
                             
                             </Card.Title>
                     </Card>
                     <Row style={{ margin: '24px 24px 24px 24px' }}>
                         <Col  >
-                            <Table striped bordered hover>
+                            <Table striped bordered hover variant="light" style= {{opacity: .99}}>
 
                                 <thead>
                                     <tr>
-                                        <th className='align-middle'>NO</th>
+                                        <th>NO</th>
                                         <th className='px-5 align-middle' >TEAM</th>
-                                        <th className='align-middle'>PLAYED</th>
-                                        <th className='align-middle'>WON</th>
-                                        <th className='align-middle'>DRAW</th>
-                                        <th className='align-middle'>LOST</th>
-                                        <th className='align-middle'>GOALS FOR</th>
-                                        <th className='align-middle'>GOALS AGAINST</th>
-                                        <th className='align-middle'>GOALS DIFFERENCE</th>
-                                        <th className='align-middle'>POINTS</th>
+                                        <th>PLAYED</th>
+                                        <th>WON</th>
+                                        <th>DRAW</th>
+                                        <th>LOST</th>
+                                        <th>GOALS FOR</th>
+                                        <th>GOALS AGAINST</th>
+                                        <th>GOALS DIFFERENCE</th>
+                                        <th>POINTS</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     {this.props.spainTable == null ? [] : this.props.spainTable.data.standings[0].table.map((val, i) => (
                                         <tr>
-                                            <td className='align-middle'>{val.position}</td>
+                                            <td>{val.position}</td>
                                             <td className='px-5'><img src={val.team.crestUrl} style={{width: '50px', height: '50px'}} /><br/> {val.team.name}</td>
-                                            <td className='align-middle'>{val.playedGames}</td>
-                                            <td className='align-middle'>{val.won}</td>
-                                            <td className='align-middle'>{val.draw}</td>
-                                            <td className='align-middle'>{val.lost}</td>
-                                            <td className='align-middle'>{val.goalsFor}</td>
-                                            <td className='align-middle'>{val.goalsAgainst}</td>
-                                            <td className='align-middle'>{val.goalDifference}</td>
-                                            <td className='align-middle'>{val.points}</td>
+                                            <td>{val.playedGames}</td>
+                                            <td>{val.won}</td>
+                                            <td>{val.draw}</td>
+                                            <td>{val.lost}</td>
+                                            <td>{val.goalsFor}</td>
+                                            <td>{val.goalsAgainst}</td>
+                                            <td>{val.goalDifference}</td>
+                                            <td>{val.points}</td>
                                         </tr>
                                     )
                                     )}

@@ -84,10 +84,7 @@ componentDidMount() {
             obj.setState({ germanyTable })
         })
 }
-
   render(){
-
-  
   return (
     <BrowserRouter>
     <div className="App">

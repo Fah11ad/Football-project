@@ -15,7 +15,7 @@ export default class EndMatches extends Component {
               return(  <tr>
                     <td>{val.competition.name}</td>
                     <td>{val.homeTeam.name}</td>
-                    <td>{val.score.fullTime.homeTeam}  -  {val.score.fullTime.ayawTeam}</td> 
+                    <td className='font-weight-bold'>{val.score.fullTime.homeTeam}  -  {val.score.fullTime.awayTeam}</td> 
                     <td>{val.awayTeam.name}</td>
                 </tr>
                 )
@@ -24,7 +24,7 @@ export default class EndMatches extends Component {
         return (
             <div>
                 <Container>
-                    <Card style={{ margin: '24px 24px 24px 24px', backgroundColor: '#030366', color: '#fff' }}>
+                    <Card style={{ margin: '24px 24px 24px 24px',backgroundColor: '#030366', color: '#fff', transform: 'skew(-20deg)', opacity: .99}}>
                         <Card.Title  >
                             <h2 style={{ paddingTop: '20px' }}>TODAY'S MATCHES RESULTS</h2>
                             <h3>{date}</h3>
@@ -32,7 +32,7 @@ export default class EndMatches extends Component {
                     </Card>
                     <Row style={{ margin: '24px 24px 24px 24px' }}>
                         <Col  >
-                            <Table striped bordered hover>
+                            <Table striped bordered hover variant="light" style= {{opacity: .99}}>
 
                                 <thead>
                                     <tr>

@@ -23,8 +23,7 @@
 
 
 body {
-  background-image: url('./assets/dark-background.jpg');
-  /* background-image: linear-gradient(-25deg, #616161 0%, #96B7C4 100%); */
+  background-image: url('./assets/premier_league_pattern.gif');
 }
 .btn {		
 	position: relative;	
@@ -33,13 +32,14 @@ body {
 	padding-left: 2rem;
 	font-size: 1.4rem;
 	color: var(--inv);
-	letter-spacing: 1.1rem;
+	letter-spacing: .3rem;
 	text-transform: uppercase;
 	transition: all 600ms cubic-bezier(0.77, 0, 0.175, 1);	
 	cursor: pointer;
   user-select: none;
-  background-color: rgba(10, 230, 200, 0.5);
-  margin:  3px 3px 3px 3px;
+  background-color: rgba(244, 250, 249, 0.99);
+  margin:  5px 5px 5px 5px;
+  transform: skew(15deg);
 }
 
 .btn:before, .btn:after {
@@ -88,4 +88,25 @@ body {
 .middle:hover:after {
 	top: 0;
 	height: 100%;
+}
+th, td {
+  vertical-align: middle!important;
+
+}
+h1 {
+color: black;
+vertical-align: middle!important;
+-webkit-font-smoothing: 'antialiased';
+box-sizing: 'inherit';
+text-transform: uppercase;
+}
+h2 {
+  vertical-align: middle!important; 
+}
+.card{
+  margin: '24px 24px 24px 24px';
+  background-color: '#030366';
+  color: '#fff';
+  transform: 'skew(20deg)';
+   opacity: .99
 }

@@ -23,7 +23,7 @@ export default class Matches extends Component {
         return (
             <div>
                 <Container>
-                    <Card style={{ margin: '24px 24px 24px 24px', backgroundColor: '#030366', color: '#fff' }}>
+                    <Card style={{ margin: '24px 24px 24px 24px',backgroundColor: '#030366', color: '#fff', transform: 'skew(-20deg)', opacity: .99}}>
                         <Card.Title  >
                             <h2 style={{ paddingTop: '20px' }}>TODAY'S SCHEDULED MATCHES</h2>
                             <h3>{date}</h3>
@@ -31,7 +31,7 @@ export default class Matches extends Component {
                     </Card>
                     <Row style={{ margin: '24px 24px 24px 24px' }}>
                         <Col  >
-                            <Table striped bordered hover>
+                            <Table striped bordered hover variant="light" style= {{opacity: .99}}>
 
                                 <thead>
                                     <tr>

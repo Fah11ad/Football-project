@@ -5,8 +5,8 @@ export default class CustomNavbar extends Component {
     render() {
         return (
             <div>
-               <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" >
-                    <Navbar.Brand href="/"><h1>SPORT News</h1></Navbar.Brand>
+               <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" style={{bavbarHeight: '10px'}} >
+                    <Navbar.Brand href="/"><h1 className="font-weight-bold"><span style={{color: 'white'}}>european football news</span></h1></Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav>
