@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { Card, Container, Row, Col, Table } from 'react-bootstrap'
-import axios from 'axios'
 
 
 export default class EnglandTable extends Component {
