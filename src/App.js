@@ -13,6 +13,8 @@ import SpainTable from './components/SpainTable';
 import FranceTable from './components/FranceTable';
 import GermanyTable from './components/GermanyTable';
 import axios from 'axios'
+import Matches from './components/Matches';
+import EndMatches from './components/EndMatches';
 
 
 class App extends Component {
@@ -97,12 +99,15 @@ componentDidMount() {
       <Route exact path="/SpainTable" render={(props) => <SpainTable {...props} spainTable={this.state.spainTable} />} />
       <Route exact path="/FranceTable" render={(props) => <FranceTable {...props} franceTable={this.state.franceTable} />} />
       <Route exact path="/GermanyTable" render={(props) => <GermanyTable {...props} germanyTable={this.state.germanyTable} />} />
+      <Route exact path="/Matches" render={(props) => <Matches {...props} response={this.state.response} />} />
+      <Route exact path="/EndMatches" render={(props) => <EndMatches {...props} response={this.state.response} />} />
       
       
       <Route path="/news" component={News} />
       <Route path="/CustomTables" component= {CustomTables}/>
       <Route path="/Competions" component= {Competions}/>
       <Route path="/football" component= {Football}/>
+   
       
       </Switch>   
     </div>

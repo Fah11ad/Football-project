@@ -35,11 +35,26 @@ export default class CustomTables extends Component {
                             <Image src={require("../assets/france-ligue-1.png")} style={{width:'150px', height:'150px'}}/>
                         </Button>
                         </NavLink>
-                        <NavLink to="/EnglandTable">
+                        <NavLink to="/GermanyTable">
                         <Button className="btn middle" variant="flat" size="xxl">
-                            <Image src={require("../assets/premier-league-logo-preview.png")} style={{width:'150px', height:'150px'}}/>
+                            <Image src={require("../assets/Bundesliga_logo.png")} style={{width:'150px', height:'150px'}}/>
                         </Button>
                         </NavLink>
+                        <br />
+                       
+                            <h2>TODAY'S MATCHES</h2>
+                            <br />
+                            <NavLink to="/Matches">
+                        <Button className="btn middle" variant="flat" size="xxl">
+                            <Image src={require("../assets/premier-league-logo-preview.png")} style={{width:'250px', height:'250px'}}/>
+                        </Button>
+                        </NavLink>
+                        <NavLink to="/EndMatches">
+                        <Button className="btn middle" variant="flat" size="xxl">
+                            <Image src={require("../assets/Serie-A.png")} style={{width:'250px', height:'250px'}}/>
+                        </Button>
+                        </NavLink>
+                       
                         
                         
                     {/* </Col> */}

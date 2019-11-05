@@ -1,7 +1,9 @@
 import React, { Component } from 'react'
 import { Card, Container, Row, Col, Table } from 'react-bootstrap'
+import axios from 'axios'
 
-export default class Matches extends Component {
+
+export default class EndMatches extends Component {
 
     render() {
         let today = new Date()
@@ -9,13 +11,12 @@ export default class Matches extends Component {
 
         let objStatus = this.props.response == null ? [] : this.props.response.data.matches.map((val, i) => {
             let status = this.props.response.data.matches[i].status
-            if (status == "SCHEDULED") {
+            if (status == "FINISHED") {
               return(  <tr>
-                    <td>{val.utcDate}</td>
                     <td>{val.competition.name}</td>
                     <td>{val.homeTeam.name}</td>
+                    <td>{val.score.fullTime.homeTeam}  -  {val.score.fullTime.ayawTeam}</td> 
                     <td>{val.awayTeam.name}</td>
-                    
                 </tr>
                 )
             }
@@ -25,7 +26,7 @@ export default class Matches extends Component {
                 <Container>
                     <Card style={{ margin: '24px 24px 24px 24px', backgroundColor: '#030366', color: '#fff' }}>
                         <Card.Title  >
-                            <h2 style={{ paddingTop: '20px' }}>TODAY'S SCHEDULED MATCHES</h2>
+                            <h2 style={{ paddingTop: '20px' }}>TODAY'S MATCHES RESULTS</h2>
                             <h3>{date}</h3>
                         </Card.Title>
                     </Card>
@@ -35,11 +36,10 @@ export default class Matches extends Component {
 
                                 <thead>
                                     <tr>
-                                        <th>DATE / Time</th>
                                         <th>COMPETITION</th>
                                         <th>HOME TEAM</th>
+                                        <th>RESULT</th>
                                         <th>AWAY TEAM</th>
-                                        
                                     </tr>
                                 </thead>
                                 <tbody>
