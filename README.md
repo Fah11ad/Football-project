@@ -50,7 +50,9 @@ Stage 3:
 
 ### User Stories
 
-As a user, you have to type of information to get, First one Standings tables of the top five euro leagues. Second thing is Today's matches details.
+As a user, you have two type of information to get the following:
+First: Standings tables of the top five euro leagues. 
+Second: Today's matches details.
 
 ---
 
