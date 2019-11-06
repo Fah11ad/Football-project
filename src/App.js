@@ -3,10 +3,7 @@ import { Route, BrowserRouter, Switch, Link } from 'react-router-dom'
 import './App.css';
 import Home from './components/Home';
 import News from './components/News';
-import CustomTables from './components/CustomTables'
-import Competions from './components/Competions'
 import CustomNavbar from './components/CustomNavbar'
-import Football from './components/Football'
 import EnglandTable from './components/EnglandTable';
 import ItalyTable from './components/ItalyTable';
 import SpainTable from './components/SpainTable';
@@ -20,11 +17,6 @@ import EndMatches from './components/EndMatches';
 class App extends Component {
   state = {
     response: null,
-    
-    italyTable: null,
-    spainTable: null,
-    franceTable: null,
-    germanyTable: null
 }
 
 
@@ -57,10 +49,6 @@ componentDidMount() {
       <Route exact path="/EndMatches" render={(props) => <EndMatches {...props} response={this.state.response} />} />
       
       
-      <Route path="/news" component={News} />
-      <Route path="/CustomTables" component= {CustomTables}/>
-      <Route path="/Competions" component= {Competions}/>
-      <Route path="/football" component= {Football}/>
       <Route path="/EnglandTable" component= {EnglandTable}/>
       <Route path="/ItalyTable" component= {ItalyTable}/>
       <Route path="/SpainTable" component= {SpainTable}/>

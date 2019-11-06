@@ -110,3 +110,7 @@ h2 {
   transform: 'skew(20deg)';
    opacity: .99
 }
+.hov:hover{
+	margin-left: 1rem;
+	width:250px;
+}

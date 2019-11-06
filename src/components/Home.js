@@ -26,7 +26,7 @@ export default class CustomTables extends Component {
                 </NavLink>
                 <NavLink to="/ItalyTable">
                     <Button className="btn middle" variant="flat" size="xxl">
-                        <Image src={require("../assets/Serie-A.png")} style={{ width: '150px', height: '150px' }} />
+                        <Image src={require("../assets/Serie_A_logo.png")} style={{ width: '150px', height: '150px' }} />
                     </Button>
                 </NavLink>
                 <NavLink to="/SpainTable">
