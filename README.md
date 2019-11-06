@@ -4,7 +4,7 @@ Football News
 
 ## Description
 
-This app is covering European football news, such as Schedualed amtches, results of matches and Standings Tables of top five leagues.
+This app is covering European football news, such as Scheduled matches, results of matches and Standings Tables of top five leagues.
 
 This app is collecting data from one of free football API.
 
