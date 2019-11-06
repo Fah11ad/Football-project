@@ -1,8 +1,26 @@
 import React, { Component } from 'react'
 import { Card, Container, Row, Col, Table } from 'react-bootstrap'
+import axios from 'axios'
 
 
 export default class EnglandTable extends Component {
+
+    state = {
+        englandTable:null
+    }
+    
+    componentDidMount = () => {
+        let obj = this
+        axios({
+            headers: { 'X-Auth-Token': '24cff506e20140d3aea18a56e74c7ec7' },
+            url: 'http://api.football-data.org/v2/competitions/2021/standings?api-key=24cff506e20140d3aea18a56e74c7ec7',
+            dataType: 'json',
+            type: 'GET',
+        })
+            .then(function (englandTable) {
+                obj.setState({ englandTable })
+            })
+    }
     
     render() {
         
@@ -33,7 +51,7 @@ export default class EnglandTable extends Component {
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    {this.props.englandTable == null ? [] : this.props.englandTable.data.standings[0].table.map((val, i) => (
+                                    {this.state.englandTable == null ? [] : this.state.englandTable.data.standings[0].table.map((val, i) => (
                                         <tr>
                                             <td>{val.position}</td>
                                             <td className='px-5'><img src={val.team.crestUrl} style={{width: '50px', height: '50px'}} /><br/> {val.team.name}</td>
