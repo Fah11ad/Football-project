@@ -1,68 +1,66 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Project Title
 
-## Available Scripts
+Football News
 
-In the project directory, you can run:
+## Description
 
-### `npm start`
+This app is covering European football news, such as Schedualed amtches, results of matches and Standings Tables of top five leagues.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+This app is collecting data from one of free football API.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+### Technical Used
+I use the following to build this game:
 
-### `npm test`
+```
+React
+CSS
+JavaScript
+React Route
+React DOM manipulation
+Bootstrap
+Axios
+```
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Planning and Development Process 
 
-### `npm run build`
+Stage 1:
+* Create app in react with necessary components.
+* Search for football API
+* Build the first style with CSS and react-bootstrap.
+* Start write the code.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Stage 2:
+* Create Route path to the components.
+* Add DOM event to the buttons
+* Add some style useing React-Bootstrab and CSS.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+Stage 3:
+* Finalize style sheet.
+* Fix the bugs.
+* Deploy.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+### Wireframe
+* Home page
+![Home Page](football-project-wireframe-1.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+* Second page
+![Second Page](football-project-wireframe-2.png)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### User Stories
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+As a user, you have to type of information to get, First one Standings tables of the top five euro leagues. Second thing is Today's matches details.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+---
 
-## Learn More
+### Problem-Solving Strategy
+Using console.log sometimes to see the exact result 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+ ## References
+ * API Source: https://www.football-data.org/
+ * React Bootstrap: https://react-bootstrap.github.io/
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify

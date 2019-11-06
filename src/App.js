@@ -1,8 +1,7 @@
 import React, { Component } from 'react'
-import { Route, BrowserRouter, Switch, Link } from 'react-router-dom'
+import { Route, BrowserRouter, Switch } from 'react-router-dom'
 import './App.css';
 import Home from './components/Home';
-import News from './components/News';
 import CustomNavbar from './components/CustomNavbar'
 import EnglandTable from './components/EnglandTable';
 import ItalyTable from './components/ItalyTable';

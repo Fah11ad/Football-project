@@ -10,7 +10,7 @@ export default class CustomNavbar extends Component {
                     <Navbar.Brand href="/"><h1 className="font-weight-bold"><span style={{ color: 'white' }}>european football news</span></h1></Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
-                        <Nav>
+                        <Nav >
                             <Nav.Link href="/">Home</Nav.Link>
                             <Nav.Link href="/Matches">Today's Matches</Nav.Link>
                             <Nav.Link href="/EndMatches">Results</Nav.Link>

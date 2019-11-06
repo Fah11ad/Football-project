@@ -1,10 +1,5 @@
 import React, { Component } from 'react'
-import EnglandTable from './EnglandTable'
-import ItalyTable from './ItalyTable'
-import SpainTable from './SpainTable'
-import FranceTable from './FranceTable'
-import GermanyTable from './GermanyTable'
-import { Card, CardDeck, Col, Row, Button, Image } from 'react-bootstrap'
+import { Card, Button, Image } from 'react-bootstrap'
 import { NavLink } from 'react-router-dom'
 import '../App.css'
 
@@ -17,8 +12,7 @@ export default class CustomTables extends Component {
                         <h2 style={{ paddingTop: '20px' }}>TOP FIVE LEAGUE TABLES</h2>
                     </Card.Title>
                 </Card>
-                {/* <Row> */}
-                {/* <Col lg={6} md={6} sm={12}> */}
+               
                 <NavLink to="/EnglandTable">
                     <Button className="btn middle" variant="flat" size="xxl">
                         <Image src={require("../assets/premier-league-logo-preview.png")} style={{ width: '150px', height: '150px' }} />
@@ -59,18 +53,13 @@ export default class CustomTables extends Component {
                 </NavLink>
                 <NavLink to="/EndMatches">
                     <Button className="btn middle" variant="flat" size="xxl" style={{ width: '500px', height: '150px' }}>
-                        <h1><span className="font-weight-bold">RESULT</span><br /> MATCHES</h1>
+                        <h1><span className="font-weight-bold">RESULTS</span><br /> MATCHES</h1>
                         {/* <Image src={require("../assets/Serie-A.png")} style={{width:'250px', height:'250px'}}/> */}
                     </Button>
                 </NavLink>
 
 
 
-                {/* </Col> */}
-                {/* <Col lg={6} md={6} sm={12}> */}
-
-                {/* </Col> */}
-                {/* </Row> */}
             </div>
         )
     }
