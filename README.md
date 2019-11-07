@@ -4,7 +4,7 @@ Football News
 
 ## Description
 
-This app is covering European football news, such as Schedualed amtches, results of matches and Standings Tables of top five leagues.
+This app is covering European football news, such as Scheduled matches, results of matches and Standings Tables of top five leagues.
 
 This app is collecting data from one of free football API.
 
@@ -50,7 +50,9 @@ Stage 3:
 
 ### User Stories
 
-As a user, you have to type of information to get, First one Standings tables of the top five euro leagues. Second thing is Today's matches details.
+As a user, you have two types of information to get the following:
+First: Standings tables of the top five euro leagues. 
+Second: Today's matches details.
 
 ---
 
@@ -63,4 +65,5 @@ Using console.log sometimes to see the exact result
  ## References
  * API Source: https://www.football-data.org/
  * React Bootstrap: https://react-bootstrap.github.io/
+ * Project link: http://football-react-app.herokuapp.com/
 
