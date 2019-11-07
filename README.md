@@ -50,7 +50,7 @@ Stage 3:
 
 ### User Stories
 
-As a user, you have two types of information to get the following:
+As a user, you have two type of information to get the following:
 First: Standings tables of the top five euro leagues. 
 Second: Today's matches details.
 
